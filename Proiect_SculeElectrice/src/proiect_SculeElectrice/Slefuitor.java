@@ -1,6 +1,6 @@
 package proiect_SculeElectrice;
 
-public class Slefuitor {
+public class Slefuitor extends SculeElectrice{
     int diametruDisc,lungimeBanda,tipPrindere;
 
     Slefuitor(int diametruDisc, int lungimeBanda, int tipPrindere) {

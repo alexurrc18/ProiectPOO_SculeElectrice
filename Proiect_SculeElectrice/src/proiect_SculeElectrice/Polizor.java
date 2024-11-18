@@ -1,6 +1,6 @@
 package proiect_SculeElectrice;
 
-public class Polizor {
+public class Polizor extends SculeElectrice{
     int diametruDisc,turatie,nivelZgomot;
 
     Polizor(int diametruDisc, int turatie, int nivelZgomot) {
