@@ -25,9 +25,6 @@ public class Test {
 
 
         // Neagu Diana
-        // SculeElectrice:
-        //        String marca, tipAlimentare;
-        //        double putere, greutate, pret;
         GeneratorElectric g1 = new GeneratorElectric(65,100, 50, "benzina", "Rotakt", "Jack", 98, 20,800);
         GeneratorElectric g2 = new GeneratorElectric(70, 110,60, "motorina","Bisonte", "USB", 120, 30,1000 );
         GeneratorElectric g3 = new GeneratorElectric (72, 120, 55, "gaz","Weina", "USB-C", 110, 25,700);
@@ -40,12 +37,7 @@ public class Test {
         AparatDeSudura a3 = new AparatDeSudura ( 239, "otel","digital","Daihen", "stecher",120,9,800);
 
 
-
-
-
         //Filoti Cristina
-
-
         PolizorUnghiular a = new PolizorUnghiular(16, 42, "vertical", 65.5, "Bosch", "USB", 43.4, 673.2, 174);
         PolizorUnghiular b = new PolizorUnghiular(12, 33, "inclinat", 44.4, "Bosch", "USB-C", 55.5, 763.3, 421);
         PolizorUnghiular c = new PolizorUnghiular(22, 56, "vertical", 62.7, "Makita", "USB", 73.7, 854, 470);
@@ -59,8 +51,6 @@ public class Test {
         System.out.println(m1);
         System.out.println(m2);
         System.out.println(m3);
-
-
 
 /*
         SculeElectrice[] vScule = new SculeElectrice[40];
@@ -124,9 +114,6 @@ public class Test {
             System.out.println(masina.toString());
         }
 */
-
-
-
 
 
         // Călin Alexandru
