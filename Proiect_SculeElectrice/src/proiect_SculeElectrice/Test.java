@@ -45,6 +45,7 @@ public class Test {
         System.out.println(m3);
 
 
+
 /*
         SculeElectrice[] vScule = new SculeElectrice[40];
         PolizorUnghiular[] vPolizor = new PolizorUnghiular[10];
