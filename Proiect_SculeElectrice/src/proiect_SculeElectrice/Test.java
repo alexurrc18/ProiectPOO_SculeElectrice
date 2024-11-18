@@ -24,6 +24,11 @@ public class Test {
         AparatDeSudura a1 = new AparatDeSudura (200, "fier", "analogic", "Bohler","stecher",100,14,400);
         AparatDeSudura a2 = new  AparatDeSudura (250, "inox", "digital","ESAB", "stecher",110,10,500);
         AparatDeSudura a3 = new AparatDeSudura ( 239, "otel","digital","Daihen", "stecher",120,9,800);
+
+         System.out.println(a1);
+        System.out.println(a2);
+        System.out.println(a3);
+
      
     }
     
