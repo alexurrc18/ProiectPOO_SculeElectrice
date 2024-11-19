@@ -9,6 +9,7 @@
 
 package proiect_SculeElectrice;
 
+
 public class Test {
     public static void main(String[] args) {
 
@@ -43,6 +44,7 @@ public class Test {
         PolizorUnghiular a = new PolizorUnghiular(16, 42, "vertical", 65.5, 4.5, "Bosch", "USB", 43.4, 673.2, 174);
         PolizorUnghiular b = new PolizorUnghiular(12, 33, "inclinat", 44.4, 3.3, "Bosch", "USB-C", 55.5, 763.3, 421);
         PolizorUnghiular c = new PolizorUnghiular(22, 56, "vertical", 62.7,9.2, "Makita", "USB", 73.7, 854, 470);
+
         System.out.println(a);
         System.out.println(b);
         System.out.println(c);
@@ -123,16 +125,15 @@ public class Test {
         //     double lungimeCursa, nivelZgomot;
         //     int numarCurseMersGol;
         //     String tipPrindere;
-        SculeElectrice fierastrau1 = new FierastrauPendular(26, 3200,
-                "tija U", 87, true);
-        SculeElectrice fierastrau2 = new FierastrauPendular(20, 3000,
-                "tija U", 95, true);
-        SculeElectrice fierastrau3 = new FierastrauPendular(23, 3100,
-                "SDS-Plus", 84, true);
+      /*  SculeElectrice fierastrau1 = new FierastrauPendular(26, 3200, "tija U", 87, true);
+        SculeElectrice fierastrau2 = new FierastrauPendular(20, 3000, "tija U", 95, true);
+        SculeElectrice fierastrau3 = new FierastrauPendular(23, 3100, "SDS-Plus", 84, true);
 
         System.out.println(fierastrau1);
         System.out.println(fierastrau2);
         System.out.println(fierastrau3);
+
+       */
 
 
         /*
