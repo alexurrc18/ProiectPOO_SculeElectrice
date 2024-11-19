@@ -25,29 +25,31 @@ public class Test {
 
 
         // Neagu Diana
-        GeneratorElectric g1 = new GeneratorElectric(65,100, 50, "benzina", "Rotakt", "Jack", 98, 20,800);
-        GeneratorElectric g2 = new GeneratorElectric(70, 110,60, "motorina","Bisonte", "USB", 120, 30,1000 );
-        GeneratorElectric g3 = new GeneratorElectric (72, 120, 55, "gaz","Weina", "USB-C", 110, 25,700);
+        GeneratorElectric g1 = new GeneratorElectric("monofazat",65,100, 50, "benzina", "Rotakt", "Jack", 98, 20,800);
+        GeneratorElectric g2 = new GeneratorElectric("monofazat",70, 110,60, "motorina","Bisonte", "USB", 120, 30,1000 );
+        GeneratorElectric g3 = new GeneratorElectric ("trifazat",72, 120, 55, "gaz","Weina", "USB-C", 110, 25,700);
         System.out.println(g1);
         System.out.println(g2);
         System.out.println(g3);
 
-        AparatDeSudura a1 = new AparatDeSudura (200, "fier", "analogic", "Bohler","stecher",100,14,400);
-        AparatDeSudura a2 = new  AparatDeSudura (250, "inox", "digital","ESAB", "stecher",110,10,500);
-        AparatDeSudura a3 = new AparatDeSudura ( 239, "otel","digital","Daihen", "stecher",120,9,800);
-
+        AparatDeSudura a1 = new AparatDeSudura (6, "prin contact", 200, "fier", "analogic", "Bohler","stecher",100,14,400);
+        AparatDeSudura a2 = new  AparatDeSudura (4, "cu ridicare",250, "inox", "digital","ESAB", "stecher",110,10,500);
+        AparatDeSudura a3 = new AparatDeSudura (2, "automata",239, "otel","digital","Daihen", "stecher",120,9,800);
+        System.out.println(a1);
+        System.out.println(a2);
+        System.out.println(a3);
 
         //Filoti Cristina
-        PolizorUnghiular a = new PolizorUnghiular(16, 42, "vertical", 65.5, "Bosch", "USB", 43.4, 673.2, 174);
-        PolizorUnghiular b = new PolizorUnghiular(12, 33, "inclinat", 44.4, "Bosch", "USB-C", 55.5, 763.3, 421);
-        PolizorUnghiular c = new PolizorUnghiular(22, 56, "vertical", 62.7, "Makita", "USB", 73.7, 854, 470);
+        PolizorUnghiular a = new PolizorUnghiular(16, 42, "vertical", 65.5, 4.5, "Bosch", "USB", 43.4, 673.2, 174);
+        PolizorUnghiular b = new PolizorUnghiular(12, 33, "inclinat", 44.4, 3.3, "Bosch", "USB-C", 55.5, 763.3, 421);
+        PolizorUnghiular c = new PolizorUnghiular(22, 56, "vertical", 62.7,9.2, "Makita", "USB", 73.7, 854, 470);
         System.out.println(a);
         System.out.println(b);
         System.out.println(c);
 
-        MasinaGaurit m1 = new MasinaGaurit(21, "otel", "vertical", 12.5, "Bosch", "Jack", 55, 254.5, 532);
-        MasinaGaurit m2 = new MasinaGaurit(19, "zinc", "inclinat", 14.3, "AEG", "Jack", 66.6, 176, 389.9);
-        MasinaGaurit m3 = new MasinaGaurit(20, "fier", "vertical", 9.7, "AEG", "USB", 53.9, 98.2, 157.9);
+        MasinaGaurit m1 = new MasinaGaurit(21, 4, "otel", "vertical", 12.5, "Bosch", "Jack", 55, 254.5, 532);
+        MasinaGaurit m2 = new MasinaGaurit(19,5, "zinc", "inclinat", 14.3, "AEG", "Jack", 66.6, 176, 389.9);
+        MasinaGaurit m3 = new MasinaGaurit(20,3, "fier", "vertical", 9.7, "AEG", "USB", 53.9, 98.2, 157.9);
         System.out.println(m1);
         System.out.println(m2);
         System.out.println(m3);
