@@ -1,8 +1,6 @@
 package proiect_SculeElectrice;
 
 
-public class MasinaGaurit extends SculeElectrice{
-        int diametruGaura;
         String materialBurghiu, directia;
         double lungimeBurghiu;
 
@@ -18,7 +16,6 @@ public class MasinaGaurit extends SculeElectrice{
 
         //constructor cu parametri
 
-        public MasinaGaurit(int diametruGaura, String materialBurghiu, String directia, double lungimeBurghiu,
                             String marca, String tipAlimentare, double putere, double greutate, double pret){
 
             super(marca, tipAlimentare, putere, greutate, pret);
@@ -41,7 +38,6 @@ public class MasinaGaurit extends SculeElectrice{
         //redefinire metoda toString
 
         public String toString(){
-            return super.toString()+"\n\tdiametruGaura: "+diametruGaura+"\n\tmaterialBurghiu: "+materialBurghiu+
                     "\n\tdirectia: "+directia+"\n\tlungimeBurghiu: "+lungimeBurghiu;
         }
 

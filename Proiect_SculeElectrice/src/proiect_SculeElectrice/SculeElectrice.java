@@ -1,6 +1,6 @@
 package proiect_SculeElectrice;
 
-public class SculeElectrice{
+public class SculeElectrice implements ActivitateScule{
         String marca, tipAlimentare;
         double putere, greutate, pret;
 
@@ -39,6 +39,15 @@ public class SculeElectrice{
         return "Marca: "+marca+"\nTip Alimentare: "+tipAlimentare+"\nPutere: "+putere+"\nGreutate: "+greutate+"\nPret: "+pret+"\n";
     }
 
+    @Override
+    public void opreste() {
+        System.out.println("Oprit.");
+    }
 
+    @Override
+    public void porneste() {
+        System.out.println("Pornit.");
+    }
 
 }
+
