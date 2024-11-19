@@ -5,13 +5,16 @@ public class Rotopercutor extends SculeElectrice implements ActivitateScule{
     String prindere;
 
     Rotopercutor(){
+        super();
         turatii=0;
         inaltime=0;
         percutie=0;
         impact=0;
         prindere="";
     }
-    Rotopercutor(int turatii, int inaltime, int percutie, int impact, String prindere){
+    Rotopercutor(int turatii, int inaltime, int percutie, int impact, String prindere,
+                 String marca, String tipAlimentare, double putere, double greutate, double pret){
+        super(marca, tipAlimentare, putere, greutate, pret);
         this.turatii=turatii;
         this.inaltime=inaltime;
         this.percutie=percutie;
@@ -19,6 +22,7 @@ public class Rotopercutor extends SculeElectrice implements ActivitateScule{
         this.prindere=prindere;
     }
     Rotopercutor(Rotopercutor copie){
+        super(copie);
         this.turatii=copie.turatii;
         this.inaltime=copie.inaltime;
         this.percutie=copie.percutie;
@@ -26,7 +30,7 @@ public class Rotopercutor extends SculeElectrice implements ActivitateScule{
         this.prindere=copie.prindere;
     }
     public String toString(){
-        return "Numarul de turatii este "+turatii+"Inaltimea este "+inaltime+"Energie de percutie(J) "+percutie+"Energie de impact: "+impact+"Prindere: "+prindere;
+        return super.toString()+turatii+"Inaltimea este "+inaltime+"Energie de percutie(J) "+percutie+"Energie de impact: "+impact+"Prindere: "+prindere;
     }
 
     @Override
