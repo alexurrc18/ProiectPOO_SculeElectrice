@@ -7,12 +7,15 @@ public class SurubelnitaElectrica extends SculeElectrice implements ActivitateSc
     double cupluMaxim;
 
     SurubelnitaElectrica(){
+        super();
         tipMandrina = "";
         turatieNominala = 0;
         trepteViteza = false;
     }
 
-    SurubelnitaElectrica(String tipMandrina,int capacitateBaterie,  int turatieNominala, double cupluMaxim, boolean trepteViteza) {
+    SurubelnitaElectrica(String tipMandrina,int capacitateBaterie,  int turatieNominala, double cupluMaxim, boolean trepteViteza,
+        String marca, String tipAlimentare, double putere, double greutate, double pret) {
+        super(marca, tipAlimentare, putere, greutate, pret);
         this.tipMandrina = tipMandrina;
         this.turatieNominala = turatieNominala;
         this.trepteViteza = trepteViteza;
@@ -21,6 +24,7 @@ public class SurubelnitaElectrica extends SculeElectrice implements ActivitateSc
     }
 
     SurubelnitaElectrica(SurubelnitaElectrica s) {
+        super(s);
         this.tipMandrina = s.tipMandrina;
         this.turatieNominala = s.turatieNominala;
         this.trepteViteza = s.trepteViteza;
@@ -29,7 +33,7 @@ public class SurubelnitaElectrica extends SculeElectrice implements ActivitateSc
     }
 
     public String toString() {
-        return "Tip mandrina: "+ tipMandrina + "\nTuratie nominala: " + turatieNominala +"\nTrepte viteza: "+ trepteViteza + "\nCapacitate baterie: " +capacitateBaterie + "\nCuplu maxim: " + cupluMaxim +"\n";
+        return super.toString()+ "Tip mandrina: "+ tipMandrina + "\nTuratie nominala: " + turatieNominala +"\nTrepte viteza: "+ trepteViteza + "\nCapacitate baterie: " +capacitateBaterie + "\nCuplu maxim: " + cupluMaxim +"\n";
     }
 
     @Override

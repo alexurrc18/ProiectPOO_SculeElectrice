@@ -5,6 +5,7 @@ public class FierastrauPendular extends SculeElectrice implements ActivitateScul
     String tipPrindere; boolean vitezaReglabila;
 
     FierastrauPendular() {
+        super();
         lungimeCursa = 0;
         nivelZgomot = 0;
         numarCurseMersGol = 0;
@@ -13,7 +14,9 @@ public class FierastrauPendular extends SculeElectrice implements ActivitateScul
     }
 
     FierastrauPendular(int lungimeCursa, int numarCurseMersGol,
-                       String tipPrindere, int nivelZgomot, boolean vitezaReglabila) {
+                       String tipPrindere, int nivelZgomot, boolean vitezaReglabila,
+                       String marca, String tipAlimentare, double putere, double greutate, double pret) {
+        super(marca, tipAlimentare, putere, pret, greutate);
         this.lungimeCursa = lungimeCursa;
         this.nivelZgomot = nivelZgomot;
         this.numarCurseMersGol = numarCurseMersGol;
@@ -22,7 +25,8 @@ public class FierastrauPendular extends SculeElectrice implements ActivitateScul
     }
 
     FierastrauPendular(FierastrauPendular f){
-        lungimeCursa = f.lungimeCursa;
+        super(f);
+        lungimeCursa= f.lungimeCursa;
         nivelZgomot = f.nivelZgomot;
         numarCurseMersGol = f.numarCurseMersGol;
         tipPrindere = f.tipPrindere;
@@ -30,7 +34,7 @@ public class FierastrauPendular extends SculeElectrice implements ActivitateScul
     }
 
     public String toString(){
-        return "Lungime cursă:"+lungimeCursa+"\n Numar Curse:"
+        return super.toString()+"Lungime cursă:"+lungimeCursa+"\n Numar Curse:"
                 +numarCurseMersGol+"\n Tip Prindere:"+tipPrindere+"\n Nivel zgomot:"+nivelZgomot+"\nViteză reglabilă:" + vitezaReglabila +"\n";
     }
 
