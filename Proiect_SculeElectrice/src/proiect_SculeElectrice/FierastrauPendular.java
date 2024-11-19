@@ -13,10 +13,19 @@ public class FierastrauPendular extends SculeElectrice implements ActivitateScul
         vitezaReglabila = false;
     }
 
-    FierastrauPendular(int lungimeCursa, int numarCurseMersGol,
-                       String tipPrindere, int nivelZgomot, boolean vitezaReglabila,
-                       String marca, String tipAlimentare, double putere, double greutate, double pret) {
+    FierastrauPendular(String marca, String tipAlimentare, double putere, double greutate, double pret,
+                       int lungimeCursa, int numarCurseMersGol, String tipPrindere, int nivelZgomot, boolean vitezaReglabila) {
         super(marca, tipAlimentare, putere, pret, greutate);
+        this.lungimeCursa = lungimeCursa;
+        this.nivelZgomot = nivelZgomot;
+        this.numarCurseMersGol = numarCurseMersGol;
+        this.tipPrindere = tipPrindere;
+        this.vitezaReglabila = vitezaReglabila;
+    }
+
+    FierastrauPendular(SculeElectrice s,
+                       int lungimeCursa, int numarCurseMersGol, String tipPrindere, int nivelZgomot, boolean vitezaReglabila) {
+        super(s);
         this.lungimeCursa = lungimeCursa;
         this.nivelZgomot = nivelZgomot;
         this.numarCurseMersGol = numarCurseMersGol;

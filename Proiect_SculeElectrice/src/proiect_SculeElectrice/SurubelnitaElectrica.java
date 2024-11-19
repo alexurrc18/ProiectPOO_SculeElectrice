@@ -6,16 +6,26 @@ public class SurubelnitaElectrica extends SculeElectrice implements ActivitateSc
     boolean trepteViteza;
     double cupluMaxim;
 
-    SurubelnitaElectrica(){
+    SurubelnitaElectrica(SculeElectrice scula1, String pătrat, int capacitateBaterie, int turatieNominala, double cupluMaxim, boolean trepteViteza){
         super();
         tipMandrina = "";
-        turatieNominala = 0;
-        trepteViteza = false;
+        this.turatieNominala = 0;
+        this.trepteViteza = false;
     }
 
-    SurubelnitaElectrica(String tipMandrina,int capacitateBaterie,  int turatieNominala, double cupluMaxim, boolean trepteViteza,
-        String marca, String tipAlimentare, double putere, double greutate, double pret) {
+    SurubelnitaElectrica(String marca, String tipAlimentare, double putere, double greutate, double pret,
+                         String tipMandrina,int capacitateBaterie,  int turatieNominala, double cupluMaxim, boolean trepteViteza) {
         super(marca, tipAlimentare, putere, greutate, pret);
+        this.tipMandrina = tipMandrina;
+        this.turatieNominala = turatieNominala;
+        this.trepteViteza = trepteViteza;
+        this.capacitateBaterie = capacitateBaterie;
+        this.cupluMaxim = cupluMaxim;
+    }
+
+    SurubelnitaElectrica(SurubelnitaElectrica s,
+                         String tipMandrina,int capacitateBaterie,  int turatieNominala, double cupluMaxim, boolean trepteViteza) {
+        super(s);
         this.tipMandrina = tipMandrina;
         this.turatieNominala = turatieNominala;
         this.trepteViteza = trepteViteza;
