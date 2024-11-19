@@ -1,6 +1,6 @@
 package proiect_SculeElectrice;
 
-public class Rotopercutor extends SculeElectrice{
+public class Rotopercutor extends SculeElectrice implements ActivitateScule{
     int turatii, inaltime, percutie;
 
     Rotopercutor(){
@@ -20,5 +20,15 @@ public class Rotopercutor extends SculeElectrice{
     }
     public String toString(){
         return "Numarul de turatii este "+turatii+"Inaltimea este "+inaltime+"Energie de percutie(J) "+percutie;
+    }
+
+    @Override
+    public void opreste() {
+        System.out.println("Oprit.");
+    }
+
+    @Override
+    public void porneste() {
+        System.out.println("Pornit.");
     }
 }

@@ -1,6 +1,6 @@
 package proiect_SculeElectrice;
 
-public class PolizorUnghiular extends SculeElectrice{
+public class PolizorUnghiular extends SculeElectrice implements ActivitateScule{
 
     int diametruDisc, supraincalzire;
     String tip;
@@ -45,6 +45,15 @@ public class PolizorUnghiular extends SculeElectrice{
                 "\n\tturatia: "+turatia+"\n\ttip: "+tip;
     }
 
+    @Override
+    public void opreste() {
+        System.out.println("Oprit.");
+    }
+
+    @Override
+    public void porneste() {
+        System.out.println("Pornit.");
+    }
 
 }
 

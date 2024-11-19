@@ -1,7 +1,7 @@
 package proiect_SculeElectrice;
 
 
-public class MasinaGaurit extends SculeElectrice{
+public class MasinaGaurit extends SculeElectrice implements ActivitateScule{
         int diametruGaura;
         String materialBurghiu, directia;
         double lungimeBurghiu;
@@ -44,6 +44,16 @@ public class MasinaGaurit extends SculeElectrice{
             return super.toString()+"\n\tdiametruGaura: "+diametruGaura+"\n\tmaterialBurghiu: "+materialBurghiu+
                     "\n\tdirectia: "+directia+"\n\tlungimeBurghiu: "+lungimeBurghiu;
         }
+
+    @Override
+    public void opreste() {
+        System.out.println("Oprit.");
+    }
+
+    @Override
+    public void porneste() {
+        System.out.println("Pornit.");
+    }
 
 
     }

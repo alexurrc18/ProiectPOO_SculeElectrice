@@ -1,6 +1,6 @@
 package proiect_SculeElectrice;
 
-public class Polizor extends SculeElectrice{
+public class Polizor extends SculeElectrice implements ActivitateScule{
     int diametruDisc,turatie,nivelZgomot;
 
     Polizor(int diametruDisc, int turatie, int nivelZgomot) {
@@ -20,5 +20,15 @@ public class Polizor extends SculeElectrice{
     }
     public String toString() {
         return " diametruDisc :" + diametruDisc + " turatie :" + turatie + " nivelZgomot :" + nivelZgomot;
+    }
+
+    @Override
+    public void opreste() {
+        System.out.println("Oprit.");
+    }
+
+    @Override
+    public void porneste() {
+        System.out.println("Pornit.");
     }
 }

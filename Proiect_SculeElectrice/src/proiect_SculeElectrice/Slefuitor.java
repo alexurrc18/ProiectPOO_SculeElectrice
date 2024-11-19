@@ -1,6 +1,6 @@
 package proiect_SculeElectrice;
 
-public class Slefuitor extends SculeElectrice{
+public class Slefuitor extends SculeElectrice implements ActivitateScule{
     int diametruDisc,lungimeBanda,tipPrindere;
 
     Slefuitor(int diametruDisc, int lungimeBanda, int tipPrindere) {
@@ -20,5 +20,15 @@ public class Slefuitor extends SculeElectrice{
     }
     public String toString() {
         return " diametruDisc :" + diametruDisc + " lungimeBanda :" + lungimeBanda + " tipPrindere :" + tipPrindere;
+    }
+
+    @Override
+    public void opreste() {
+        System.out.println("Oprit.");
+    }
+
+    @Override
+    public void porneste() {
+        System.out.println("Pornit.");
     }
 }

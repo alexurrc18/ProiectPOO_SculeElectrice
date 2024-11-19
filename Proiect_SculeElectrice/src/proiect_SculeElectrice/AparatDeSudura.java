@@ -1,6 +1,6 @@
 package proiect_SculeElectrice;
 
-public class AparatDeSudura extends SculeElectrice{
+public class AparatDeSudura extends SculeElectrice implements ActivitateScule{
     int intensitate;
     String material, control;
     
@@ -33,4 +33,14 @@ public class AparatDeSudura extends SculeElectrice{
          return super.toString()+"\n\tintensitate:"+intensitate+"\n\tmaterial:"+material+"\n\tcontrol"+control;
                  
      }
+
+    @Override
+    public void opreste() {
+        System.out.println("Oprit.");
+    }
+
+    @Override
+    public void porneste() {
+        System.out.println("Pornit.");
+    }
 }

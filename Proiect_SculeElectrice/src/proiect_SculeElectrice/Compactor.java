@@ -1,6 +1,6 @@
 package proiect_SculeElectrice;
 
-public class Compactor extends SculeElectrice{
+public class Compactor extends SculeElectrice implements ActivitateScule{
     int combustibil, adancime, frecventa;
 
     Compactor(){
@@ -20,5 +20,15 @@ public class Compactor extends SculeElectrice{
     }
     public String toString(){
         return "Combustibilul utilizat este "+combustibil+"Adancimea de compactare este  "+adancime+"Frecventa vibratiilor este "+frecventa;
+    }
+
+    @Override
+    public void opreste() {
+        System.out.println("Oprit.");
+    }
+
+    @Override
+    public void porneste() {
+        System.out.println("Pornit.");
     }
 }

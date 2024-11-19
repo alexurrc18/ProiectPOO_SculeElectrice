@@ -1,6 +1,6 @@
 package proiect_SculeElectrice;
         
-public class GeneratorElectric extends SculeElectrice{
+public class GeneratorElectric extends SculeElectrice implements ActivitateScule {
     int voltaj, cc;
     double frecventa;
     String carburant;
@@ -40,5 +40,15 @@ public class GeneratorElectric extends SculeElectrice{
    // @Override
     public String toString(){
         return super.toString()+"\n\tvoltaj:"+voltaj+"\n\tcc:"+cc+"\n\tfrecventa:"+frecventa+"\n\tcarburant"+carburant;
+    }
+
+    @Override
+    public void opreste() {
+        System.out.println("Oprit.");
+    }
+
+    @Override
+    public void porneste() {
+        System.out.println("Pornit.");
     }
 }

@@ -41,6 +41,6 @@ public class FierastrauPendular extends SculeElectrice implements ActivitateScul
 
     @Override
     public void porneste() {
-        System.out.println("Fierăstrău pendular pornit " + marca);
+        System.out.println("Fierăstrău pendular pornit.");
     }
 }
