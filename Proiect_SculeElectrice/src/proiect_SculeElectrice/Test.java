@@ -122,16 +122,18 @@ public class Test {
         //     int numarCurseMersGol;
         //     String tipPrindere;
         SculeElectrice fierastrau1 = new FierastrauPendular(26, 3200,
-                "tija U", 87);
+                "tija U", 87, true);
         SculeElectrice fierastrau2 = new FierastrauPendular(20, 3000,
-                "tija U", 95);
+                "tija U", 95, true);
         SculeElectrice fierastrau3 = new FierastrauPendular(23, 3100,
-                "SDS-Plus", 84);
+                "SDS-Plus", 84, true);
 
         System.out.println(fierastrau1);
         System.out.println(fierastrau2);
         System.out.println(fierastrau3);
 
+
+        /*
         //Surubelniță electrică:
         //    String tipMandrina;
         //    int turatieNominala;
@@ -143,6 +145,7 @@ public class Test {
         System.out.println(pistol1);
         System.out.println(pistol2);
         System.out.println(pistol3);
+        */
 
 
     }
