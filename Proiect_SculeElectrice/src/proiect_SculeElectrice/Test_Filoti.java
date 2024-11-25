@@ -35,12 +35,6 @@ public class Test_Filoti {
         }
 
 
-        System.out.println("\n\n\n[FILTRARE] Listă Scule Electrice:");
-        for (SculeElectrice scula : scule) {
-            if (scula.greutate >= 400.0 && scula.putere > 80.0)
-                System.out.println(scula + "\n");
-        }
-
 
         ArrayList<PolizorUnghiular> polizoare = new ArrayList<>();
 
@@ -75,12 +69,6 @@ public class Test_Filoti {
         }
 
 
-        System.out.println("\n\n\n[FILTRARE] Listă Polizoare Unghiulare:");
-        for (PolizorUnghiular polizor : polizoare) {
-            if (polizor.supraincalzire > 27 && polizor.tip != "vertical")
-                System.out.println(polizor + "\n");
-        }
-
 
         ArrayList<MasinaGaurit> masiniGaurit = new ArrayList<>();
 
@@ -113,9 +101,27 @@ public class Test_Filoti {
         }
 
 
+//afisarea vectorilor dupa 2 conditii combinate
+
+        System.out.println("\n\n\n[FILTRARE] Listă Scule Electrice:");
+        for (SculeElectrice scula : scule) {
+            if (scula.greutate >= 400.0 && scula.putere > 80.0)
+                System.out.println(scula + "\n");
+        }
+
+
+
+        System.out.println("\n\n\n[FILTRARE] Listă Polizoare Unghiulare:");
+        for (PolizorUnghiular polizor : polizoare) {
+            if (polizor.getSupraincalzire() > 27 && !polizor.getTip().equals("vertical"))
+                System.out.println(polizor + "\n");
+        }
+
+
+
         System.out.println("\n\n\n[FILTRARE] Listă Masini Gaurit:");
         for (MasinaGaurit masini : masiniGaurit) {
-            if (masini.diametruGaura < 20 && masini.lungimeBurghiu>10.3)
+            if (masini.getDiametruGaura() < 20 && masini.getDiametruGaura()>10.3)
                 System.out.println(masini + "\n");
             }
 

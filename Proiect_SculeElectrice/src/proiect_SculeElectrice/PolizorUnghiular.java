@@ -2,9 +2,9 @@ package proiect_SculeElectrice;
 
 public class PolizorUnghiular extends SculeElectrice implements ActivitateScule{
 
-    int diametruDisc, supraincalzire;
-    String tip;
-    double turatia, sistemSiguranta;
+   private int diametruDisc, supraincalzire;
+   private String tip;
+   private double turatia, sistemSiguranta;
 
     //constructor fara parametri
 
@@ -56,6 +56,41 @@ public class PolizorUnghiular extends SculeElectrice implements ActivitateScule{
     @Override
     public void porneste() {
         System.out.println("Pornit.");
+    }
+
+
+    // set si get
+
+    public void setDiametruDisc(){
+        this.diametruDisc=diametruDisc;
+    }
+    public void setSupraincalzire(){
+        this.supraincalzire=supraincalzire;
+    }
+    public void setTuratia(){
+        this.turatia=turatia;
+    }
+    public void setTip(){
+        this.tip=tip;
+    }
+    public void setSistemSiguranta(){
+        this.sistemSiguranta=sistemSiguranta;
+    }
+
+    public int getDiametruDisc(){
+        return diametruDisc;
+    }
+    public int getSupraincalzire(){
+        return supraincalzire;
+    }
+    public String getTip(){
+        return tip;
+    }
+    public double getTuratia(){
+        return turatia;
+    }
+    public double getSistemSiguranta(){
+        return sistemSiguranta;
     }
 
 }
