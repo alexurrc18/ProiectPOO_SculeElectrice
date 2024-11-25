@@ -2,9 +2,9 @@ package proiect_SculeElectrice;
 
 
 public class MasinaGaurit extends SculeElectrice implements ActivitateScule{
-    int diametruGaura, trepteViteza;
-    String materialBurghiu, directia;
-    double lungimeBurghiu;
+   private int diametruGaura, trepteViteza;
+   private String materialBurghiu, directia;
+   private double lungimeBurghiu;
 
     //constructor fara parametri
 
@@ -58,6 +58,41 @@ public class MasinaGaurit extends SculeElectrice implements ActivitateScule{
     public void porneste() {
         System.out.println("Pornit.");
     }
+
+    //set si get
+
+    public void setDiametruGaura(int diametruGaura){
+        this.diametruGaura = diametruGaura;
+    }
+    public void setTrepteViteza(int trepteViteza){
+        this.trepteViteza = trepteViteza;
+    }
+    public void setMaterialBurghiu(String materialBurghiu){
+        this.materialBurghiu = materialBurghiu;
+    }
+    public void setDirectia(String directia){
+        this.directia = directia;
+    }
+    public void setLungimeBurghiu(double lungimeBurghiu){
+        this.lungimeBurghiu = lungimeBurghiu;
+    }
+
+    public int getDiametruGaura(){
+        return diametruGaura;
+    }
+    public int getTrepteViteza(){
+        return trepteViteza;
+    }
+    public String getMaterialBurghiu(){
+        return materialBurghiu;
+    }
+    public String getDirectia(){
+        return directia;
+    }
+    public double getLungimeBurghiu(){
+        return lungimeBurghiu;
+    }
+
 
 
 }
