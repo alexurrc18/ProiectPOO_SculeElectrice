@@ -102,7 +102,7 @@ public class Test_GarnetA {
 
         System.out.println("\n[FILTRARE] Scule electrice:");
         for (SculeElectrice scula : listaSculeElectrice) {
-            if (scula.greutate < 450.0 && scula.putere > 90.0) System.out.println(scula + "\n");
+            if (scula.getGreutate() < 450.0 && scula.getPutere() > 90.0) System.out.println(scula + "\n");
         }
 
         System.out.println("\n[FILTRARE] Polizoare:");
