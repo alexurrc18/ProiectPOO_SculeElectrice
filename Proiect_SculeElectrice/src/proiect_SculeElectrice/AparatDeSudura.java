@@ -1,8 +1,8 @@
 package proiect_SculeElectrice;
 
 public class AparatDeSudura extends SculeElectrice implements ActivitateScule{
-    int intensitate, impuls;
-    String material, control, tipAprindere;
+   private int intensitate, impuls;
+   private String material, control, tipAprindere;
     
     //constructor fara parametri
     public AparatDeSudura(){
@@ -48,5 +48,38 @@ public class AparatDeSudura extends SculeElectrice implements ActivitateScule{
     @Override
     public void porneste() {
         System.out.println("Pornit.");
+    }
+
+
+    //set si get
+    public void setIntensitate(int intensitate){
+        this.intensitate=intensitate;
+    }
+    public void setImpuls( int impuls){
+        this.impuls=impuls;
+    }
+    public void setMaterial(String material){
+        this.material=material;
+    }
+    public void setControl(String control){
+        this.control=control;
+    }
+    public void setTipAprindere(String tipAprindere){
+        this.tipAprindere=tipAprindere;
+    }
+    public int getIntensitate(){
+        return intensitate;
+    }
+    public int getImpuls(){
+        return impuls;
+    }
+    public String getMaterial(){
+        return material;
+    }
+    public String getControl(){
+        return control;
+    }
+    public String getTipAprindere(){
+        return tipAprindere;
     }
 }
