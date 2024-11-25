@@ -77,7 +77,7 @@ public class GeneratorElectric extends SculeElectrice implements ActivitateScule
     public int getvoltaj() {
         return voltaj;
     }
-    public int getcc() {
+    public int getCc() {
         return cc;
     }
     public double getfrecventa() {
