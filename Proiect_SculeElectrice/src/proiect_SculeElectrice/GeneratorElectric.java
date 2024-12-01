@@ -1,9 +1,9 @@
 package proiect_SculeElectrice;
         
 public class GeneratorElectric extends SculeElectrice implements ActivitateScule {
-    int voltaj, cc;
-    double frecventa;
-    String carburant, tipCurent;
+     private int voltaj, cc;
+     private double frecventa;
+    private String carburant, tipCurent;
     
     //constructor fara parametri
     
@@ -54,4 +54,41 @@ public class GeneratorElectric extends SculeElectrice implements ActivitateScule
     public void porneste() {
         System.out.println("Pornit.");
     }
+
+
+    //set si get
+
+    public void setVoltaj(int voltaj) {
+        this.voltaj = voltaj;
+    }
+    public void setCc(int cc) {
+        this.cc = cc;
+    }
+    public void setFrecventa(double frecventa) {
+        this.frecventa = frecventa;
+    }
+    public void setCarburant(String carburant) {
+        this.carburant = carburant;
+    }
+    public void setTipCurent(String tipCurent) {
+        this.tipCurent = tipCurent;
+    }
+
+    public int getvoltaj() {
+        return voltaj;
+    }
+    public int getCc() {
+        return cc;
+    }
+    public double getfrecventa() {
+        return frecventa;
+    }
+    public String getCarburant() {
+        return carburant;
+    }
+    public String getTipCurent() {
+        return tipCurent;
+    }
+
+
 }

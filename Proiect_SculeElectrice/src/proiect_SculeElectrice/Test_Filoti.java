@@ -105,10 +105,9 @@ public class Test_Filoti {
 
         System.out.println("\n\n\n[FILTRARE] Listă Scule Electrice:");
         for (SculeElectrice scula : scule) {
-            if (scula.greutate >= 400.0 && scula.putere > 80.0)
+            if (scula.getGreutate() >= 400.0 && scula.getPutere() > 80.0)
                 System.out.println(scula + "\n");
         }
-
 
 
         System.out.println("\n\n\n[FILTRARE] Listă Polizoare Unghiulare:");

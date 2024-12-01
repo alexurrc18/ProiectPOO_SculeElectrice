@@ -8,12 +8,12 @@
 //
 
 package proiect_SculeElectrice;
-
 import java.util.ArrayList;
 
 public class TestNeaguD {
-    public static void main(String[] args) {
 
+
+    public static void main(String[] args) {
         SculeElectrice s1 = new SculeElectrice("Bosch", "USB-A", 65.5, 423.33, 250);
         SculeElectrice s2 = new SculeElectrice("Makita", "USB-C", 73.4, 500, 475);
         SculeElectrice s3 = new SculeElectrice("AEG", "Jack", 83, 216.4, 308);
@@ -46,12 +46,6 @@ public class TestNeaguD {
         System.out.println("\nInstanțe SculeElectrice:");
         for (SculeElectrice scula : scule) {
             System.out.println(scula);
-        }
-
-        System.out.println("\n\n\n[FILTRARE] Listă Scule Electrice:");
-        for (SculeElectrice scula : scule) {
-            if (scula.greutate >= 350.0 && scula.putere > 82.7)
-                System.out.println(scula + "\n");
         }
 
 
@@ -90,15 +84,8 @@ public class TestNeaguD {
 
         System.out.println("\nInstante GeneratorElectric:");
         for (GeneratorElectric gen : generator) {
-                System.out.println(gen + "\n");
+            System.out.println(gen + "\n");
         }
-
-        System.out.println("\n\n\n[FILTRARE] Listă Generator electric:");
-        for (GeneratorElectric gen : generator) {
-            if (gen.cc > 110 && gen.putere <= 90)
-                System.out.println(gen + "\n");
-        }
-
 
 
         AparatDeSudura a1 = new AparatDeSudura (6, "prin contact", 200, "fier", "analogic", "Bohler","stecher",100,14,400);
@@ -135,11 +122,33 @@ public class TestNeaguD {
             System.out.println(aparat + "\n");
         }
 
-        System.out.println("\n\n\n[FILTRARE] Listă Aparat de sudura:");
-        for (AparatDeSudura aparat : as) {
-            if (aparat.impuls ==6 && aparat.material == "fier")
-                System.out.println(aparat + "\n");
+
+
+
+        /*filtrare vectori
+
+        System.out.println("\n\n\n[FILTRARE] Listă Scule Electrice:");
+        for (SculeElectrice scula : scule) {
+            if (scula.greutate >= 350.0 && scula.putere > 82.7)
+                System.out.println(scula + "\n");
         }
 
+
+        System.out.println("\n\n\n[FILTRARE] Listă Generator electric:");
+        for (GeneratorElectric gen : generator) {
+            if (gen.getCc() > 110 && gen.putere <= 90)
+                System.out.println(gen + "\n");
+        }
+
+
+
+        System.out.println("\n\n\n[FILTRARE] Listă Aparat de sudura:");
+        for (AparatDeSudura aparat : as) {
+            if (aparat.getImpuls() ==6 && aparat.getMaterial() == "fier")
+                System.out.println(aparat + "\n");
+        }
+        */
+
     }
+
 }

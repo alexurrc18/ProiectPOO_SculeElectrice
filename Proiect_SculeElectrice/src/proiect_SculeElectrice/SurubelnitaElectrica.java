@@ -42,6 +42,14 @@ public class SurubelnitaElectrica extends SculeElectrice implements ActivitateSc
         this.cupluMaxim = s.cupluMaxim;
     }
 
+    public SurubelnitaElectrica() {
+        tipMandrina = "";
+        turatieNominala = 0;
+        trepteViteza = false;
+        capacitateBaterie = 0;
+        cupluMaxim = 0;
+    }
+
     public void setTipMandrina(String tipMandrina) {
         this.tipMandrina = tipMandrina;
     }
