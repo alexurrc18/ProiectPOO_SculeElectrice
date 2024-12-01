@@ -1,6 +1,6 @@
 package proiect_SculeElectrice;
 
-public class FierastrauPendular extends SculeElectrice implements ActivitateScule{
+public class            FierastrauPendular extends SculeElectrice implements ActivitateScule{
     private int lungimeCursa, numarCurseMersGol, nivelZgomot;
     private String tipPrindere; private boolean vitezaReglabila;
 

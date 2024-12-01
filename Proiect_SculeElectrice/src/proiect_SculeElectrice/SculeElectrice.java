@@ -39,6 +39,11 @@ public class SculeElectrice implements ActivitateScule{
         return "Marca: "+marca+"\nTip Alimentare: "+tipAlimentare+"\nPutere: "+putere+"\nGreutate: "+greutate+"\nPret: "+pret+"\n";
     }
 
+
+    public String getMarca(){
+        return marca;
+    }
+
     @Override
     public void opreste() {
         System.out.println("Oprit.");
