@@ -5,6 +5,7 @@ public class SurubelnitaElectrica extends SculeElectrice implements ActivitateSc
     private int turatieNominala, capacitateBaterie;
     private boolean trepteViteza;
     private double cupluMaxim;
+    private boolean activitare;
 
     SurubelnitaElectrica(SurubelnitaElectrica scula1, String pătrat, int capacitateBaterie, int turatieNominala, double cupluMaxim, boolean trepteViteza){
         super();
