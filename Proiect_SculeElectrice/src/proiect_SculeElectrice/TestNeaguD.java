@@ -127,14 +127,14 @@ public class TestNeaguD {
 
           System.out.println("\n\n\n[FILTRARE] Listă Scule Electrice:");
           for (SculeElectrice scula : scule) {
-            if (scula.greutate >= 350.0 && scula.putere > 82.7)
+            if (scula.getGreutate() >= 350.0 && scula.getPutere() > 82.7)
                 System.out.println(scula + "\n");
         }
 
 
         System.out.println("\n\n\n[FILTRARE] Listă Generator electric:");
         for (GeneratorElectric gen : generator) {
-            if (gen.getCc() > 110 && gen.putere <= 90)
+            if (gen.getCc() > 110 && gen.getPutere() <= 90)
                 System.out.println(gen + "\n");
         }
 
