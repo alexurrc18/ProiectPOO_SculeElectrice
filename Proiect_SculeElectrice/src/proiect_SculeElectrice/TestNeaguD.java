@@ -125,10 +125,8 @@ public class TestNeaguD {
 
 
 
-        /*filtrare vectori
-
-        System.out.println("\n\n\n[FILTRARE] Listă Scule Electrice:");
-        for (SculeElectrice scula : scule) {
+          System.out.println("\n\n\n[FILTRARE] Listă Scule Electrice:");
+          for (SculeElectrice scula : scule) {
             if (scula.greutate >= 350.0 && scula.putere > 82.7)
                 System.out.println(scula + "\n");
         }
@@ -147,7 +145,7 @@ public class TestNeaguD {
             if (aparat.getImpuls() ==6 && aparat.getMaterial() == "fier")
                 System.out.println(aparat + "\n");
         }
-        */
+        
 
     }
 
