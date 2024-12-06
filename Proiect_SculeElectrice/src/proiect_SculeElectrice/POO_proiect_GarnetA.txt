@@ -1,0 +1,34 @@
+Polizor: 125, 6000, 110, racire cu apa, true, AEG, Jack, 83.0, 216.4, 308.0
+Polizor: 115, 3000, 120, racire cu aer, true, Bosch, USB-A, 65.5, 423.33, 250.0
+Polizor: 125, 8000, 130, racire prin pulverizare, true, Makita, USB-C, 73.4, 500.0, 475.0
+Polizor: 150, 3000, 90, racire cu apa, true, Einhell, Jack, 78.0, 300.0, 320.0
+Polizor: 230, 3500, 100, racire cu apa, true, Dewalt, USB-C, 85.0, 450.0, 630.0
+Polizor: 125, 6000, 110, racire cu aer, true, Hitachi, USB-A, 68.0, 380.0, 290.0
+Polizor: 115, 3000, 120, racire prin pulverizare, true, Milwaukee, USB-C, 90.0, 400.0, 520.0
+Polizor: 125, 8000, 130, racire cu apa, true, Metabo, Jack, 82.0, 360.0, 480.0
+Polizor: 150, 3000, 90, racire cu aer, true, Ryobi, USB-C, 74.0, 370.0, 490.0
+Polizor: 230, 3500, 100, racire prin pulverizare, true, Stanley, USB-A, 88.0, 410.0, 600.0
+
+
+Slefuitor: 125, 115, prindere cu filete, amortizoare de vibratii, aspirator, AEG, Jack, 83.0, 216.4, 308.0
+Slefuitor: 100, 610, prindere cu role, manere reglabile, aspirator, Bosch, USB-A, 65.5, 423.33, 250.0
+Slefuitor: 125, 125, scai, sist de vibratii reduse, microfiltrare, Makita, USB-C, 73.4, 500.0, 475.0
+Slefuitor: 60, 70, scai, lucrari in detaliu, microfiltrare, Einhell, Jack, 78.0, 300.0, 320.0
+Slefuitor: 225, 533, prindere cu piulita, manere reglabile, filtru de praf, Dewalt, USB-C, 85.0, 450.0, 630.0
+Slefuitor: 125, 115, scai, amortizoare de vibratii, aspirator, Hitachi, USB-A, 68.0, 380.0, 290.0
+Slefuitor: 100, 610, prindere cu role, manere reglabile, aspirator, Milwaukee, USB-C, 90.0, 400.0, 520.0
+Slefuitor: 125, 125, scai, sist de vibratii reduse, microfiltrare, Metabo, Jack, 82.0, 360.0, 480.0
+Slefuitor: 60, 70, scai, lucrari in detaliu, microfiltrare, Ryobi, USB-C, 74.0, 370.0, 490.0
+Slefuitor: 225, 533, prindere cu piulita, manere reglabile, filtru de praf, Stanley, USB-A, 88.0, 410.0, 600.0
+
+
+Scule electrice: Bosch, USB-A, 65.5, 423.33, 250
+Scule electrice: DeWalt, USB-C, 75.0, 500.0, 300
+Scule electrice: Makita, Wireless, 85.0, 600.5, 320
+Scule electrice: Milwaukee, USB-A, 70.5, 450.0, 280
+Scule electrice: Ryobi, USB-C, 65.0, 400.0, 260
+Scule electrice: Stanley, Wireless, 80.0, 550.0, 310
+Scule electrice: Hilti, USB-A, 68.5, 470.0, 290
+Scule electrice: Bosch, Wireless, 90.0, 520.0, 340
+Scule electrice: Festool, USB-C, 72.5, 480.0, 275
+Scule electrice: Black & Decker, Wireless, 78.0, 510.0, 305
