@@ -109,7 +109,7 @@
                   <background color="-1"/>
                   <font name="SF Pro Display" size="26" style="1"/>
                   <foreground color="-16777216"/>
-                  <text value="numePagina"/>
+                  <text value="Acasă"/>
                 </properties>
               </component>
               <component id="97a6c" class="javax.swing.JButton" binding="adaugaButton" default-binding="true">

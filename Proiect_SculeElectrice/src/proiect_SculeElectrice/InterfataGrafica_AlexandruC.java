@@ -2,7 +2,6 @@ package proiect_SculeElectrice;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.*;
@@ -182,8 +181,8 @@ public class InterfataGrafica_AlexandruC extends JFrame {
                         listaSurubelnite.remove(linieSelectata - 1);
                     } else if (numePagina.getText().equals("Fierăstraie pendulare")) {
                         listaFierastrau.remove(linieSelectata - 1);
-                    } else if (numePagina.getText().equals("Scule Electrice")) {
-                        listaScule.remove(linieSelectata - 1);
+                    } else if (numePagina.getText().equals("Scule electrice")) {
+                        listaScule.remove(linieSelectata-1);
                     }
 
                     tabel.removeRow(linieSelectata);
@@ -330,14 +329,18 @@ public class InterfataGrafica_AlexandruC extends JFrame {
         filtrareButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String minPret = JOptionPane.showInputDialog("Introduceți prețul minim:");
-                String maxPret = JOptionPane.showInputDialog("Introduceți prețul maxim:");
+                String minPret = JOptionPane.showInputDialog("Introduceți prețul minim:"); if(minPret==null) {return;}
+                String maxPret = JOptionPane.showInputDialog("Introduceți prețul maxim:"); if(maxPret==null) {return;}
 
-                if (minPret == null || maxPret == null) {
-                    return;
-                }
 
                 if (numePagina.getText().equals("Surubelnițe electrice")) {
+                    String minTuratie = JOptionPane.showInputDialog("Introduceți turație minimă:"); if(minTuratie==null) {return;}
+                    String maxTuratie = JOptionPane.showInputDialog("Introduceți turație maximă:"); if(maxTuratie==null) {return;}
+
+                    String minBaterie = JOptionPane.showInputDialog("Introduceți baterie minimă:"); if(minBaterie==null) {return;}
+                    String maxBaterie = JOptionPane.showInputDialog("Introduceți baterie maximă:"); if(maxBaterie==null) {return;}
+
+
                     String[] numeColoana = {"Marca", "Alimentare", "Putere", "Greutate", "Pret", "Mandrina",
                             "Turatie nominala", "Cap. baterie", "Cuplu maxim", "Trepte viteza"};
                     DefaultTableModel tabelFiltrat = new DefaultTableModel(numeColoana, 0);
@@ -346,7 +349,9 @@ public class InterfataGrafica_AlexandruC extends JFrame {
                     tabelFiltrat.addRow(numeColoana);
 
                     for (SurubelnitaElectrica surubelnita : listaSurubelnite) {
-                        if (surubelnita.getPret() >= Double.parseDouble(minPret) && surubelnita.getPret() <= Double.parseDouble(maxPret)) {
+                        if (surubelnita.getPret() >= Double.parseDouble(minPret) && surubelnita.getPret() <= Double.parseDouble(maxPret) &&
+                                surubelnita.getTuratieNominala()>= Double.parseDouble(minTuratie) && surubelnita.getTuratieNominala() <= Double.parseDouble(maxTuratie) &&
+                                surubelnita.getCapacitateBaterie()>=Double.parseDouble(minBaterie) && surubelnita.getCapacitateBaterie() <= Double.parseDouble(maxBaterie)) {
                             tabelFiltrat.addRow(new Object[]{
                                     surubelnita.getMarca(),
                                     surubelnita.getTipAlimentare(),
@@ -366,6 +371,13 @@ public class InterfataGrafica_AlexandruC extends JFrame {
                     JOptionPane.showMessageDialog(null, "Filtrarea a fost aplicată!");
                 } else if (numePagina.getText().equals("Fierăstraie pendulare")) {
 
+                    String minLung = JOptionPane.showInputDialog("Introduceți lungime minimă:"); if(minLung==null) {return;}
+                    String maxLung = JOptionPane.showInputDialog("Introduceți lungime maximă:"); if(maxLung==null) {return;}
+
+                    String minZgomot = JOptionPane.showInputDialog("Introduceți niv. zgomot minim:"); if(minZgomot==null) {return;}
+                    String maxZgomot = JOptionPane.showInputDialog("Introduceți niv. zgomot maxim:"); if (maxZgomot==null) {return;}
+
+
                     String[] numeColoana = {"Marca", "Alimentare", "Putere", "Greutate", "Pret",
                             "Lungime cursă", "Curse mers în gol", "Tip prindere", "Niv. zgomot", "Viteza reglabilă"};
 
@@ -375,7 +387,9 @@ public class InterfataGrafica_AlexandruC extends JFrame {
                     tabelFiltrat.addRow(numeColoana);
 
                     for (FierastrauPendular fierastrau : listaFierastrau) {
-                        if (fierastrau.getPret() >= Double.parseDouble(minPret) && fierastrau.getPret() <= Double.parseDouble(maxPret)) {
+                        if (fierastrau.getPret() >= Double.parseDouble(minPret) && fierastrau.getPret() <= Double.parseDouble(maxPret) &&
+                        fierastrau.getLungimeCursa()>= Double.parseDouble(minLung) && fierastrau.getLungimeCursa()<= Double.parseDouble(maxLung)&&
+                        fierastrau.getNivelZgomot()>=Double.parseDouble(minZgomot) && fierastrau.getNivelZgomot()<=Double.parseDouble(maxZgomot)) {
                             tabelFiltrat.addRow(new Object[]{
                                     fierastrau.getMarca(),
                                     fierastrau.getTipAlimentare(),
@@ -393,6 +407,14 @@ public class InterfataGrafica_AlexandruC extends JFrame {
                     tabelObiecte.setModel(tabelFiltrat);
                     JOptionPane.showMessageDialog(null, "Filtrarea a fost aplicată!");
                 } else {
+
+                    String minGreutate = JOptionPane.showInputDialog("Introduceți greutate minimă:"); if(minGreutate==null){return;}
+                    String maxGreutate = JOptionPane.showInputDialog("Introduceți greutate maximă:"); if(maxGreutate==null){return;}
+
+                    String minPutere = JOptionPane.showInputDialog("Introduceți putere minimă:"); if(minPutere==null) {return;}
+                    String maxPutere = JOptionPane.showInputDialog("Introduceți putere maximă:"); if(maxPutere==null) {return;}
+
+
                     String[] numeColoana = {"Marca", "Alimentare", "Putere", "Greutate", "Pret"};
 
                     DefaultTableModel tabelFiltrat = new DefaultTableModel();
@@ -400,7 +422,9 @@ public class InterfataGrafica_AlexandruC extends JFrame {
 
                     tabelFiltrat.setColumnIdentifiers(numeColoana);
                     for (SculeElectrice scula : listaScule) {
-                        if (scula.getPret() >= Double.parseDouble(minPret) && scula.getPret() <= Double.parseDouble(maxPret)) {
+                        if (scula.getPret() >= Double.parseDouble(minPret) && scula.getPret() <= Double.parseDouble(maxPret) &&
+                        scula.getGreutate() >= Double.parseDouble(minGreutate) && scula.getGreutate() <= Double.parseDouble(maxGreutate) &&
+                        scula.getPutere() >= Double.parseDouble(minPutere) && scula.getPutere() <= Double.parseDouble(maxPutere)) {
                             tabelFiltrat.addRow(new Object[]{
                                     scula.getMarca(),
                                     scula.getTipAlimentare(),
@@ -434,7 +458,7 @@ public class InterfataGrafica_AlexandruC extends JFrame {
 
                 SculeElectrice scula = null;
                 if (numePagina.getText().equals("Surubelnițe electrice")) {
-                    scula = listaSurubelnite.get(linieSelectata - 1); // Ajustează indexul pentru rândul selectat
+                    scula = listaSurubelnite.get(linieSelectata - 1);
                 } else if (numePagina.getText().equals("Fierăstraie pendulare")) {
                     scula = listaFierastrau.get(linieSelectata - 1);
                 } else if (numePagina.getText().equals("Scule electrice")) {
