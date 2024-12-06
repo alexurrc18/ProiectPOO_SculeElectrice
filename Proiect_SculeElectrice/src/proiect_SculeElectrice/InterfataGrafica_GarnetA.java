@@ -170,8 +170,8 @@ public class InterfataGrafica_GarnetA {
                     listaPolizoare.add(new Polizor(Integer.parseInt(diametruDisc), Integer.parseInt(turatie), Integer.parseInt(nivelZgomot), sistRacire, Boolean.parseBoolean(siguranta),
                             marca, tipAlimentare, Double.parseDouble(putere), Double.parseDouble(greutate), Double.parseDouble(pret)));
 
-                    tabel.addRow(new Object[]{Integer.parseInt(diametruDisc), Integer.parseInt(turatie), Integer.parseInt(nivelZgomot), sistRacire, Boolean.parseBoolean(siguranta),
-                            marca, tipAlimentare, Double.parseDouble(putere), Double.parseDouble(greutate), Double.parseDouble(pret)
+                    tabel.addRow(new Object[]{marca, tipAlimentare, Double.parseDouble(putere), Double.parseDouble(greutate), Double.parseDouble(pret),
+                            Integer.parseInt(diametruDisc), Integer.parseInt(turatie), Integer.parseInt(nivelZgomot), sistRacire, Boolean.parseBoolean(siguranta)
                     });
 
                     JOptionPane.showMessageDialog(null, "Elementul a fost adaugat cu succes!");
@@ -192,8 +192,9 @@ public class InterfataGrafica_GarnetA {
                     listaSlefuitoare.add(new Slefuitor(Integer.parseInt(diametruDisc), Integer.parseInt(lungimeBanda), tipPrindere, ergonomie, sisColectPraf,
                             marca, tipAlimentare, Double.parseDouble(putere), Double.parseDouble(greutate), Double.parseDouble(pret)));
 
-                    tabel.addRow(new Object[]{Integer.parseInt(diametruDisc), Integer.parseInt(lungimeBanda), tipPrindere, ergonomie, sisColectPraf,
-                            marca, tipAlimentare, Double.parseDouble(putere), Double.parseDouble(greutate), Double.parseDouble(pret)
+                    tabel.addRow(new Object[]{marca, tipAlimentare, Double.parseDouble(putere), Double.parseDouble(greutate), Double.parseDouble(pret),
+                            Integer.parseInt(diametruDisc), Integer.parseInt(lungimeBanda), tipPrindere, ergonomie, sisColectPraf
+
                     });
 
                     JOptionPane.showMessageDialog(null, "Elementul a fost adaugat cu succes!");
