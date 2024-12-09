@@ -1,0 +1,19 @@
+Scule Electrice: Bosch, USB-A, 65.5, 423.33, 250
+Scule Electrice: Makita, USB-C, 73.4, 500, 475
+Scule Electrice: AEG, Jack, 83, 216.4, 308
+Scule Electrice: Dewalt, Jack, 90.0, 300.0, 600
+Scule Electrice: Skil, Jack, 55.0, 450.0, 380
+
+Generatoare Electrice: monofazat, 65, 100, 50, benzina, Rotakt, Jack, 98, 20, 800
+Generatoare Electrice: trifazat, 85, 120, 60, motorina, Honda, USB, 92, 25, 1000
+Generatoare Electrice: monofazat, 75, 110, 55, benzina, Kipor, USB-C, 96, 22, 950
+Generatoare Electrice: trifazat, 90, 130, 70, motorina, Lifan, Jack, 90, 30, 1100
+Generatoare Electrice: monofazat, 80, 100, 65, benzina, Yamaha, USB-A, 94, 18, 900
+
+
+Aparate Sudura: 6, prin contact, 200, fier, analogic, Bohler, stecher, 100, 14, 400
+Aparate Sudura: 7, prin arc, 250, aluminiu, digital, Lincoln, schuko, 120, 15, 450
+Aparate Sudura: 5, prin contact, 180, otel, analogic, Esab, stecher, 110, 13, 380
+Aparate Sudura: 8, prin arc, 300, fier, digital, Kemppi, schuko, 130, 16, 500
+Aparate Sudura: 6, prin contact, 220, otel inoxidabil, analogic, Miller, stecher, 115, 14, 420
+
