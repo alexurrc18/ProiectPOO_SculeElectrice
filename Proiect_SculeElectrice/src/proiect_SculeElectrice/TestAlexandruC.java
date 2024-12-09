@@ -9,9 +9,9 @@ public class TestAlexandruC {
         //      double putere, greutate, pret;
         SculeElectrice scula1 = new SculeElectrice("Bosch", "USB-A", 65.5, 423.33, 250);
         SculeElectrice scula2 = new SculeElectrice("Makita", "USB-C", 73.4, 500, 475);
-        SculeElectrice scula3 = new SculeElectrice("AEG", "Jack", 83, 216.4, 308);
+        SculeElectrice scula3 = new SculeElectrice();
         SculeElectrice scula4 = new SculeElectrice("DeWalt", "Type-C", 90, 600, 550);
-        SculeElectrice scula5 = new SculeElectrice("Black+Decker", "Battery", 70, 380, 400);
+        SculeElectrice scula5 = new SculeElectrice(scula4);
 
         System.out.println(scula1);
         System.out.println(scula2);
@@ -24,9 +24,9 @@ public class TestAlexandruC {
         //      String tipPrindere; boolean vitezaReglabila;
         SculeElectrice fierastrau1 = new FierastrauPendular(scula1, 26, 3200, "tija U", 87, true);
         SculeElectrice fierastrau2 = new FierastrauPendular(scula2, 20, 3000, "tija U", 95, true);
-        SculeElectrice fierastrau3 = new FierastrauPendular(scula3, 23, 3100, "SDS-Plus", 84, true);
+        SculeElectrice fierastrau3 = new FierastrauPendular();
         SculeElectrice fierastrau4 = new FierastrauPendular(scula4, 25, 3400, "SDS-Max", 90, true);
-        SculeElectrice fierastrau5 = new FierastrauPendular(scula5, 30, 3500, "tija T", 92, false);
+        SculeElectrice fierastrau5 = new FierastrauPendular((FierastrauPendular) fierastrau4);
 
         System.out.println(fierastrau1);
         System.out.println(fierastrau2);
@@ -41,9 +41,9 @@ public class TestAlexandruC {
         //    double cupluMaxim;
         SculeElectrice surubelnita1 = new SurubelnitaElectrica(scula1, "Pătrat", 1500, 1700, 60.53, true);
         SculeElectrice surubelnita2 = new SurubelnitaElectrica(scula2, "Hexagonal", 1000, 3400, 54.78, true);
-        SculeElectrice surubelnita3 = new SurubelnitaElectrica(scula3, "Hexagonal", 800, 2500, 89.43, true);
+        SculeElectrice surubelnita3 = new SurubelnitaElectrica();
         SculeElectrice surubelnita4 = new SurubelnitaElectrica(scula4, "Cilindric", 1200, 2800, 75.32, true);
-        SculeElectrice surubelnita5 = new SurubelnitaElectrica(scula5, "Tetra", 1400, 3000, 64.50, false);
+        SculeElectrice surubelnita5 = new SurubelnitaElectrica((SurubelnitaElectrica) surubelnita4);
 
         System.out.println(surubelnita1);
         System.out.println(surubelnita2);
@@ -95,6 +95,7 @@ public class TestAlexandruC {
         listaSurubelnite.add(new SurubelnitaElectrica("Bosch", "USB-C", 85.0, 450.0, 630.0, "Pătrat", 600, 2300, 68.0, true));
         listaSurubelnite.add(new SurubelnitaElectrica("Makita", "USB-A", 78.0, 390.0, 520.0, "Hexagonal", 2500, 2100, 61.5, true));
         listaSurubelnite.add(new SurubelnitaElectrica("Black+Decker", "Jack", 72.0, 370.0, 480.0, "Cilindric", 3000, 1900, 59.0, false));
+
         System.out.println("\n\n\n[LISTĂ] Surubelnite electrice:");
         for(SurubelnitaElectrica surubelnita : listaSurubelnite) {
             System.out.println(surubelnita + "\n");
@@ -104,17 +105,17 @@ public class TestAlexandruC {
 
             System.out.println("\n\n\n[FILTRARE] Scule electrice:");
             for(SculeElectrice scula : listaSculeElectrice) {
-                if(scula.greutate<300.0 && scula.putere>80.0) System.out.println(scula+"\n");
+                if(scula.getGreutate()<300.0 && scula.getPutere()>80.0) System.out.println(scula+"\n");
             }
 
             System.out.println("\n\n\n[FILTRARE] Fierăstraie pendulare:");
             for(FierastrauPendular fierastrau : listaFierastraie) {
-                if(fierastrau.getTipPrindere().equals("tija U") && fierastrau.getLungimeCursa()<80) System.out.println(fierastrau);
+                if(fierastrau.getTipPrindere().equals("tija U") && fierastrau.getLungimeCursa()<80) System.out.println(fierastrau + "\n");
             }
 
         System.out.println("\n\n\n[FILTRARE] Surubelnite electrice:");
         for(SurubelnitaElectrica surubelnita : listaSurubelnite) {
-            if(surubelnita.getTipMandrina().equals("Hexagonal") && surubelnita.getCupluMaxim()>2000) System.out.println(surubelnita + "\n");
+            if(surubelnita.getTipMandrina().equals("Hexagonal") && surubelnita.getCapacitateBaterie()>2000) System.out.println(surubelnita + "\n");
         }
 
         }

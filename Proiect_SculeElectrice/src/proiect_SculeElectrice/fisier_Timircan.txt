@@ -1,0 +1,19 @@
+Scule electrice: Bosch, USB-A, 65.5, 423.33, 250
+Scule electrice: Makita, USB-C, 73.4, 500, 475
+Scule electrice: AEG, Jack, 83, 216.4, 308
+Scule electrice: Dewalt, Jack, 90.0, 300.0, 600
+Scule electrice: Hitachi, USB, 70.0, 400.0, 450
+
+Compactor: Diesel, 300, 50, 4, true, Bosch, USB-C, 1500.0, 80.0, 7500.0
+Compactor: Benzină, 250, 60, 5, false, Makita, Micro-USB, 1200.0, 75.0, 6800.0
+Compactor: Electric, 200, 55, 3, true, DeWalt, USB-A, 1000.0, 70.0, 6200.0
+Compactor: Diesel, 350, 65, 6, true, Milwaukee, USB-C, 1800.0, 85.0, 8200.0
+Compactor: Benzină, 300, 50, 4, false, Einhell, USB-C, 1400.0, 78.0, 7000.0
+
+Rotopercutor: 1200, 200, 4000, 3, SDS-Plus, Bosch, USB-C, 800.0, 3.2, 1200.0
+Rotopercutor: 1500, 210, 4500, 4, SDS-Max, Makita, Micro-USB, 950.0, 4.0, 1400.0
+Rotopercutor: 1000, 190, 3500, 2, SDS-Plus, DeWalt, USB-A, 700.0, 2.8, 1100.0
+Rotopercutor: 1300, 200, 4000, 3, SDS-Plus, Milwaukee, USB-C, 850.0, 3.5, 1250.0
+Rotopercutor: 1400, 220, 4300, 5, SDS-Max, Einhell, USB-C, 1000.0, 4.2, 1500.0
+
+

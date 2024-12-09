@@ -9,9 +9,9 @@ public class Test_GarnetA {
         //      double putere, greutate, pret;
         SculeElectrice scula1 = new SculeElectrice("Bosch", "USB-A", 65.5, 423.33, 250);
         SculeElectrice scula2 = new SculeElectrice("Makita", "USB-C", 73.4, 500, 475);
-        SculeElectrice scula3 = new SculeElectrice("AEG", "Jack", 83, 216.4, 308);
+        SculeElectrice scula3 = new SculeElectrice();
         SculeElectrice scula4 = new SculeElectrice("DeWalt", "Type-C", 90, 600, 550);
-        SculeElectrice scula5 = new SculeElectrice("Black+Decker", "Battery", 70, 380, 400);
+        SculeElectrice scula5 = new SculeElectrice(scula1);
 
         System.out.println(scula1);
         System.out.println(scula2);
@@ -24,9 +24,9 @@ public class Test_GarnetA {
         //     boolean siguranta;
         SculeElectrice polizorDeBanc = new Polizor(125, 6000, 110, "racire cu apa", true, scula1);
         SculeElectrice polizorCuBanda = new Polizor(115, 3000, 120, "racire cu aer", true, scula2);
-        SculeElectrice polizorDeColt = new Polizor(125, 8000, 130, "racire prin pulverizare", true, scula3);
+        SculeElectrice polizorDeColt = new Polizor();
         SculeElectrice polizorDeMasa = new Polizor(150, 3000, 90, "racire cu apa", true, scula4);
-        SculeElectrice polizorDePerete = new Polizor(230, 3500, 100, "racire cu apa", true, scula5);
+        SculeElectrice polizorDePerete = new Polizor((Polizor)polizorCuBanda);
 
         System.out.println(polizorDeBanc);
         System.out.println(polizorCuBanda);
@@ -40,8 +40,8 @@ public class Test_GarnetA {
         SculeElectrice slefuitorUnghiular = new Slefuitor(125, 115, "prindere cu filete", "amortizoare de vibratii", "aspirator", scula1);
         SculeElectrice slefuitorCuBanda = new Slefuitor(100, 610, "prindere cu role", "manere reglabile", "aspirator", scula2);
         SculeElectrice slefuitorCuOrbita = new Slefuitor(125, 125, "scai", "sist de vibratii reduse", "microfiltrare", scula3);
-        SculeElectrice slefuitorDeColt = new Slefuitor(60, 70, "scai", "lucrari in detaliu", "microfiltrare", scula4);
-        SculeElectrice slefuitorDePerete = new Slefuitor(225, 533, "prindere cu piulita", "manere reglabile", "filtru de praf", scula5);
+        SculeElectrice slefuitorDeColt = new Slefuitor((Slefuitor)slefuitorCuOrbita);
+        SculeElectrice slefuitorDePerete = new Slefuitor();
 
         System.out.println(slefuitorUnghiular);
         System.out.println(slefuitorCuBanda);
@@ -102,17 +102,20 @@ public class Test_GarnetA {
 
         System.out.println("\n[FILTRARE] Scule electrice:");
         for (SculeElectrice scula : listaSculeElectrice) {
-            if (scula.greutate < 450.0 && scula.putere > 90.0) System.out.println(scula + "\n");
+            if (scula.getGreutate() < 400.0 && scula.getPutere() > 90.0)
+                System.out.println(scula + "\n");
         }
 
         System.out.println("\n[FILTRARE] Polizoare:");
         for (Polizor polizor : listaPolizoare) {
-            if (polizor.getSistRacire().equals("racire cu apa") && polizor.getDiametruDisc()<115) System.out.println(polizor + "\n");
+            if (!polizor.getSistRacire().equals("racire cu apa") && polizor.getDiametruDisc() <= 115)
+                System.out.println(polizor + "\n");
         }
 
         System.out.println("\n[FILTRARE] Slefuitoare:");
         for (Slefuitor slefuitor : listaSlefuitoare) {
-            if(slefuitor.getTipPrindere().equals("scai") && slefuitor.getLungimeBanda()<70) System.out.println(slefuitor + "\n");
+            if(slefuitor.getTipPrindere().equals("scai") && slefuitor.getLungimeBanda() >= 70)
+                System.out.println(slefuitor + "\n");
         }
     }
 }

@@ -1,8 +1,8 @@
 package proiect_SculeElectrice;
 
 public class SculeElectrice implements ActivitateScule{
-        String marca, tipAlimentare;
-        double putere, greutate, pret;
+        private String marca, tipAlimentare;
+        private double putere, greutate, pret;
 
 
     // Constructor fără parametrii
@@ -32,6 +32,46 @@ public class SculeElectrice implements ActivitateScule{
         this.putere = s.putere;
         this.greutate = s.greutate;
         this.pret = s.pret;
+    }
+
+    public double getGreutate() {
+        return greutate;
+    }
+
+    public void setGreutate(double greutate) {
+        this.greutate = greutate;
+    }
+
+    public double getPret() {
+        return pret;
+    }
+
+    public void setPret(double pret) {
+        this.pret = pret;
+    }
+
+    public String getTipAlimentare() {
+        return tipAlimentare;
+    }
+
+    public void setTipAlimentare(String tipAlimentare) {
+        this.tipAlimentare = tipAlimentare;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public double getPutere() {
+        return putere;
+    }
+
+    public void setPutere(double putere) {
+        this.putere = putere;
     }
 
     //Rescriere metoda toString
